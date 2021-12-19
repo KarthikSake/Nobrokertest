@@ -1,0 +1,25 @@
+Pre-requisites to check before running the test.
+1)	Have Maven and TestNg installed.
+2)	Make sure that the Relevant Browser name is present in the SettingsandOR.properties file.
+3)	Place the relevant drivers in src/test/resources
+4)	Verify whether Dependencies are all available.
+
+About Utilities.
+1)	Base : Contains Initialization of all our relevant objects.
+2)	BasePage: Used for abstraction of the base page to hide implementations.
+3)	ExcelReader: Used to Extract data from Excelsheet.
+4)	Functions : contains Most Reusable functions to manipulate WebPages.
+5)	PropertyReader : Contains Implementation for initializing properties instance.
+6)	RetryAnalyser: Contains maximum retry counts.
+7)	TestReport : Listeners to log out Test steps and take screenshots.
+
+
+Different ways to run 
+*) From TestNG suite.
+Right click on testng.xml file and run as TestNg Suite. 
+	*)From Runner Class.
+		Right click on Runner.java and run as TestNG class.
+	*) from command line.	
+		1)If you are using Maven, you can run it from the cmd line
+		2) Navigate to the qualified path in cd and use the command
+mvn clean test -DsuiteXmlFile=testng.xml
